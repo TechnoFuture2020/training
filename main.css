@@ -1,0 +1,197 @@
+body {
+  background-color: rgb(32, 33, 36);
+}
+
+.container, .container-fluid {
+  height: 100vh;
+}
+
+.container > .row:nth-child(2) {
+  height: 90vh;
+}
+
+form > input[type=text] {
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+form > input[type=submit] {
+  border: 1px solid #303134;
+  background-color: #303134;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #e8eaed;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 4px;
+  min-width: 185px;
+  max-width: 62%;
+}
+form > input[type=submit]:hover {
+  -webkit-box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+          box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+  border: 1px solid #5f6368;
+}
+
+form[action="https://www.google.com/advanced_search"] input[placeholder="Advanced Search"] {
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+form[action="https://www.google.com/advanced_search"] input[value="Advanced Search"] {
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: #8ab4f8;
+  outline: none;
+  color: #202124;
+}
+form[action="https://www.google.com/advanced_search"] input[value="Advanced Search"]:focus {
+  background-color: #2f5bb7;
+  -webkit-box-shadow: inset 0 0 0 2px #fff;
+          box-shadow: inset 0 0 0 2px #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: rgba(0, 0, 0, 0) 0;
+}
+form[action="https://www.google.com/advanced_search"] input[value="Advanced Search"]:hover {
+  border: 1px solid #2f5bb7;
+  background-color: #aecbfa;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+form[action="https://www.google.com/advanced_search"] input[value="Advanced Search"]:active {
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #2f5bb7;
+  border-top: 1px solid #2f5bb7;
+}
+
+label {
+  padding: 0 10px 0 20px;
+  line-height: 16px;
+  color: #bdc1c6;
+}
+
+input[type=text] {
+  outline: none;
+  color: #bdc1c6;
+  border: 1px solid #5f6368;
+  background-color: rgb(32, 33, 36);
+}
+
+input[type=text]:focus {
+  border-color: #8ab4f8;
+}
+
+input[placeholder="Google Search"]::-webkit-input-placeholder, input[placeholder="Google Image Search"]::-webkit-input-placeholder, input[placeholder="Advanced Search"]::-webkit-input-placeholder {
+  padding: 10px 20px;
+  color: #5f6368;
+}
+
+input[placeholder="Google Search"]::-moz-placeholder, input[placeholder="Google Image Search"]::-moz-placeholder, input[placeholder="Advanced Search"]::-moz-placeholder {
+  padding: 10px 20px;
+  color: #5f6368;
+}
+
+input[placeholder="Google Search"]:-ms-input-placeholder, input[placeholder="Google Image Search"]:-ms-input-placeholder, input[placeholder="Advanced Search"]:-ms-input-placeholder {
+  padding: 10px 20px;
+  color: #5f6368;
+}
+
+input[placeholder="Google Search"]::-ms-input-placeholder, input[placeholder="Google Image Search"]::-ms-input-placeholder, input[placeholder="Advanced Search"]::-ms-input-placeholder {
+  padding: 10px 20px;
+  color: #5f6368;
+}
+
+input[placeholder="Google Search"]::placeholder,
+input[placeholder="Google Image Search"]::placeholder,
+input[placeholder="Advanced Search"]::placeholder {
+  padding: 10px 20px;
+  color: #5f6368;
+}
+
+input[placeholder="Google Search"]:hover::-webkit-input-placeholder, input[placeholder="Google Image Search"]:hover::-webkit-input-placeholder, input[placeholder="Advanced Search"]:hover::-webkit-input-placeholder, input[placeholder="Google Search"]:focus::-webkit-input-placeholder, input[placeholder="Google Image Search"]:focus::-webkit-input-placeholder, input[placeholder="Advanced Search"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[placeholder="Google Search"]:hover::-moz-placeholder, input[placeholder="Google Image Search"]:hover::-moz-placeholder, input[placeholder="Advanced Search"]:hover::-moz-placeholder, input[placeholder="Google Search"]:focus::-moz-placeholder, input[placeholder="Google Image Search"]:focus::-moz-placeholder, input[placeholder="Advanced Search"]:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input[placeholder="Google Search"]:hover:-ms-input-placeholder, input[placeholder="Google Image Search"]:hover:-ms-input-placeholder, input[placeholder="Advanced Search"]:hover:-ms-input-placeholder, input[placeholder="Google Search"]:focus:-ms-input-placeholder, input[placeholder="Google Image Search"]:focus:-ms-input-placeholder, input[placeholder="Advanced Search"]:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input[placeholder="Google Search"]:hover::-ms-input-placeholder, input[placeholder="Google Image Search"]:hover::-ms-input-placeholder, input[placeholder="Advanced Search"]:hover::-ms-input-placeholder, input[placeholder="Google Search"]:focus::-ms-input-placeholder, input[placeholder="Google Image Search"]:focus::-ms-input-placeholder, input[placeholder="Advanced Search"]:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+input[placeholder="Google Search"]:hover::placeholder,
+input[placeholder="Google Image Search"]:hover::placeholder,
+input[placeholder="Advanced Search"]:hover::placeholder,
+input[placeholder="Google Search"]:focus::placeholder,
+input[placeholder="Google Image Search"]:focus::placeholder,
+input[placeholder="Advanced Search"]:focus::placeholder {
+  color: transparent;
+}
+
+input[placeholder="Google Search"]:hover,
+input[placeholder="Google Image Search"]:hover,
+input[placeholder="Advanced Search"]:hover {
+  background-color: #303134;
+  -webkit-box-shadow: 0 1px 6px 0 #171717;
+          box-shadow: 0 1px 6px 0 #171717;
+  border-color: rgba(223, 225, 229, 0);
+}
+
+input[placeholder="Google Search"]:focus,
+input[placeholder="Google Image Search"]:focus,
+input[placeholder="Advanced Search"]:focus {
+  background-color: #303134;
+  -webkit-box-shadow: 0 1px 6px 0 #171717;
+          box-shadow: 0 1px 6px 0 #171717;
+  border-color: rgba(223, 225, 229, 0);
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(97, 96, 96, 0.78);
+  padding: 7px;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  background-color: #303134;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #e8eaed;
+  text-decoration: none;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a:hover {
+  -webkit-box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+          box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
+  background-color: #303134;
+  border: 1px solid #5f6368;
+  color: #e8eaed;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.p-10-20 {
+  padding: 0 10px 0 20px;
+  color: #bdc1c6;
+}/*# sourceMappingURL=main.css.map */
