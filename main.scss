@@ -23,8 +23,8 @@ form {
 
     .search {
         position: absolute;
-        top: 13px;
-        left: 32px;
+        top: 15px;
+        left: 37px;
     }
 
     .search-image {
@@ -43,7 +43,7 @@ form {
         background-image: url(search-icon.ico);
     }
 
-    input[type="submit"] { /* if down style use > before input */
+    input[type="submit"] {
         border: 1px solid #303134;
         background-color: #303134;
         font-family: arial,sans-serif;
@@ -68,6 +68,7 @@ form {
     input[type="text"] {
         padding: 10px 40px;
         border-radius: 24px;
+        line-height: 26px;
     }
 
     #all_words,
@@ -97,8 +98,9 @@ form[action="https://www.google.com/search?"] {
 
     input[value="Advanced Search"] {
         margin-top: 20px;
+        padding: 3px 8px;
+        box-sizing: content-box;
         font-weight: bold;
-        padding: 5px;
         border: 1px solid transparent;
         border-radius: 2px;
         background-color: #8ab4f8;
@@ -203,7 +205,54 @@ a:hover {
     width: 70%;
 }
 
+p {
+    margin: 0;
+    font-family: arial, sans-serif;
+    color: #969ba1;
+}
+
 .p-10-20 {
     padding: 0 10px 0 20px;
     color: #bdc1c6;
+}
+
+.pad-left-0 {
+    padding-left: 0;
+}
+
+.p-view {
+    font-weight: bold;
+    color: #e8eaed;
+}
+
+span {
+    color: #dadce0;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+span.no-style {
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #969ba1;
+}
+
+.d-block {
+    display: block;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1056px) {
+    .dis-none {
+        display: none;
+    }
 }

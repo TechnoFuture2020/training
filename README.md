@@ -1,1 +1,1 @@
-# https://technofuture2020.github.io/training/
+# Fully working project
