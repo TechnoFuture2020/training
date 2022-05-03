@@ -14,14 +14,36 @@ body {
     height: 90vh;
 }
 
+img.google {
+    margin: 10px 0 20px;
+}
+
 form {
-    
-    > input[type="text"] {
-        padding: 10px 20px;
-        border-radius: 24px;
+    position: relative;
+
+    .search {
+        position: absolute;
+        top: 13px;
+        left: 32px;
     }
 
-    > input[type="submit"] {
+    .search-image {
+        top: 17px;
+        left: 20px;
+    }
+
+    .search::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url(search-icon.ico);
+    }
+
+    input[type="submit"] { /* if down style use > before input */
         border: 1px solid #303134;
         background-color: #303134;
         font-family: arial,sans-serif;
@@ -30,17 +52,43 @@ form {
         margin-top: 20px;
         padding: 5px;
         border-radius: 4px;
-        min-width: 185px;
-        max-width: 62%;
+        max-width: 145px;
+        width: 100%;        
 
         &:hover {
             box-shadow: 0 1px 3px rgba(23, 23, 23, 0.24);
             border: 1px solid #5f6368;
         }
     }
+
+    input[value="Google Image Search"] {
+        width: 36%;
+    }
+
+    input[type="text"] {
+        padding: 10px 40px;
+        border-radius: 24px;
+    }
+
+    #all_words,
+    #exact_word,
+    #any_words,
+    #none_words {
+        padding: 1px 0 1px 8px;
+        border-radius: 2px;
+    }
+
+    > input[type="submit"] {
+        min-width: 165px;
+        max-width: 62%;
+    }
+
+    input[value="I'm Feeling Lucky"] {
+        margin-left: 20px;
+    }
 }
 
-form[action="https://www.google.com/advanced_search"] {
+form[action="https://www.google.com/search?"] {
     
     input[placeholder="Advanced Search"] {
         padding: 10px 20px;
@@ -49,6 +97,7 @@ form[action="https://www.google.com/advanced_search"] {
 
     input[value="Advanced Search"] {
         margin-top: 20px;
+        font-weight: bold;
         padding: 5px;
         border: 1px solid transparent;
         border-radius: 2px;
@@ -127,10 +176,9 @@ input[placeholder="Advanced Search"]:focus  {
 }
 
 a {
+    box-sizing: content-box;
     display: flex;
     align-items: center;
-    border: 1px solid rgba(97, 96, 96, 0.78);
-    padding: 7px;
     border: 1px solid #303134;
     border-radius: 4px;
     background-color: #303134;
@@ -139,11 +187,9 @@ a {
     color: #e8eaed;
     text-decoration: none;
     margin: 11px 4px;
-    padding: 0 16px;
+    padding: 3px 18px;
     height: 36px;
-    min-width: 54px;
     text-align: center;
-    user-select: none;
 }
 
 a:hover {

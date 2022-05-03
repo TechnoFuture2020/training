@@ -27,10 +27,40 @@
             </div>
 
             <div class="row">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <form class="d-flex flex-column justify-content-between" action="https://images.google.com" method="GET">
-                        <input type="text" name="q" placeholder="Google Image Search">
-                        <input type="submit" value="Google Image Search" class="align-self-center">
+                <div class = "col-12 d-flex flex-column justify-content-start align-items-center">
+
+                    <img 
+                    class="google" 
+                    alt="Google"
+                    data-atf="1" data-frt="0" 
+                    srcset="googlelogo_light_color_2x.png 2x, 
+                    googlelogo_light_color_2x.png 1x" 
+                    src="googlelogo_light_color_2x.png">
+
+                    <form class = "d-flex flex-column justify-content-between w-50" 
+                    action = "https://www.google.com.ua/search"
+                    method = "GET" 
+                    name="gs">
+                        
+                    <i class="search search-image"></i>
+
+                        <input 
+                        type="text" 
+                        autocomplete="off"
+                        name="q" 
+                        placeholder="Google Image Search" 
+                        value
+                        spellcheck="false">
+                        
+                        <input 
+                        type="hidden" 
+                        name="tbm" 
+                        value="isch">
+
+                        <input class="align-self-center" 
+                        name
+                        type="submit" 
+                        value="Google Image Search">
                     </form>
                 </div>
             </div>
@@ -39,3 +69,15 @@
 
     </body>
 </html>
+
+<!-- 
+    https://www.google.com/search?q=Harvard
+&source=lnms
+
+  &tbm=isch --- ЦЕ ВОНО !!!!
+
+&sa=X
+&ved=2ahUKEwjM4IWb4b73AhVBpYsKHepMC60Q_AUoAnoECAIQBA
+&biw=1366
+&bih=625
+&dpr=1#imgrc=kl6ucaixqyY-uM -->

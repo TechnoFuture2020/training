@@ -29,13 +29,24 @@
             <div class="row">
                 <div class="col-12">
                     <!-- d-flex justify-content-center align-items-center -->
-                    <form class="d-flex flex-column" 
-                    action="https://www.google.com/advanced_search">
-
+                    
+                    <!-- https://www.google.com/advanced_search -->
+                    <form 
+                    id="s1zaZb"
+                    class="d-flex flex-column" 
+                    action="https://www.google.com/search?"
+                    method="GET"
+                    name="f">
+                    
                         <div class="row">
                             <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                                <input type="text" name="q" placeholder="Advanced Search">
-                                <input type="submit" value="Advanced Search" class="align-self-center">
+                                <!-- <input type="text" name="q" placeholder="Advanced Search"> -->
+                                
+                                <input 
+                                class="align-self-center"
+                                type="submit" 
+                                value="Advanced Search">
+
                             </div>
                         </div>
                         
@@ -55,7 +66,11 @@
                                         <label for="all words">all these words:</label>
                                     </div>
                                     <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 col-8">
-                                        <input class="w-70" type="text" id="all_words" name="q">
+                                        <input 
+                                        class="w-70" 
+                                        id="all_words" 
+                                        name="as_q"
+                                        type="text">
                                     </div>
                                 </div>
                                 
@@ -65,7 +80,13 @@
                                         <label for="exact word">this exact word or phrase:</label>
                                     </div>
                                     <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 col-8">
-                                        <input class="w-70" type="text" id="exact_word" name="q">
+                                        
+                                        <input 
+                                        class="w-70" 
+                                        id="exact_word"
+                                        name="as_epq"
+                                        type="text">
+
                                     </div>
                                 </div>
                                 
@@ -75,7 +96,11 @@
                                         <label for="any words">any of these words:</label>
                                     </div>
                                     <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 col-8">
-                                        <input class="w-70" type="text" id="any_words" name="q">
+                                        <input 
+                                        class="w-70" 
+                                        id="any_words" 
+                                        name="as_oq"
+                                        type="text">
                                     </div>
                                 </div>
         
@@ -84,7 +109,18 @@
                                         <label for="none words">none of these words:</label>
                                     </div>
                                     <div class="col-xl-10 col-lg-9 col-md-9 col-sm-8 col-8">
-                                        <input class="w-70" type="text" id="none_words" name="q">
+                                        <input 
+                                        id="CIGjud" 
+                                        name="tbs" 
+                                        type="hidden" 
+                                        value="">
+
+                                        <input 
+                                        class="w-70" 
+                                        id="none_words" 
+                                        name="as_eq"
+                                        type="text">                                  
+
                                     </div>
                                 </div>
                                 
@@ -100,3 +136,17 @@
 
     </body>
 </html>
+
+
+<!-- 
+https://www.google.com/advanced_search?as_q=love&as_epq=&as_oq=&tbs=&as_eq=&as_qdr=all&as_occt=any&safe=images
+
+
+https://www.google.com/search?
+as_q=love&
+as_epq=&
+as_oq=&
+as_eq=&
+as_qdr=all&
+as_occt=any&
+safe=images -->
