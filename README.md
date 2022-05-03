@@ -1,1 +1,1 @@
-# https://github.com/TechnoFuture2020/training
+# https://technofuture2020.github.io/training/
